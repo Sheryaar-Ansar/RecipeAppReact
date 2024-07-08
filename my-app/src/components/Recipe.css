@@ -1,0 +1,22 @@
+.headerDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198vh;
+    flex-direction: column;
+}
+.recipeSearch input{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.recipeSearch button{
+    margin-left: 10px;
+}
