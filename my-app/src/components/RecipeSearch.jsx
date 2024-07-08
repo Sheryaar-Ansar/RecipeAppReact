@@ -4,7 +4,11 @@ import './Recipe.css'
 
 const RecipeSearch = ({searchItm}) =>{
     const [valCount, setValCount] = useState('')
-    const onchange=(e)=>{
+    const onSubmit=(e)=>{
+        e.preventDefault()
+        searchItm(valCount)
+    }
+    const onchange = (e) =>{
         setValCount(e.target.value)
     }
     return(
@@ -14,10 +18,7 @@ const RecipeSearch = ({searchItm}) =>{
             onChange={onchange}
             value={valCount}
             />
-            <button onClick={()=>{
-                searchItm(valCount)
-                setValCount('')
-            }}>Search</button>
+            <button onClick={onSubmit}>Search</button>
         </div>
     )
 }

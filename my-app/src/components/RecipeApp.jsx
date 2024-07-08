@@ -3,6 +3,8 @@ import RecipeSearch from "./RecipeSearch"
 import './Recipe.css'
 import { useState } from "react"
 import ChickenKarachi from '../assets/chicken-karahi.jpg'
+import RecipeMain from "./RecipeMain"
+import RecipeList from "./RecipeList"
 
 
 const RecipeApp =()=>{
@@ -16,24 +18,31 @@ const RecipeApp =()=>{
             },
             {
                 id:2,
-                title:'Chicken',
+                title:'Mutton',
                 image:{ChickenKarachi},
                 button:'Read More',
             },
             {
                 id:3,
-                title:'Chicken',
+                title:'Beef',
                 image:{ChickenKarachi},
                 button:'Read More',
             },
             {
                 id:4,
-                title:'Chicken',
+                title:'Non-Veg',
                 image:{ChickenKarachi},
                 button:'Read More',
             },
         ]
     )
+    const [search, setSearhItems] = useState(items)
+    const searchItems = (searchVal) =>{
+        const searchKeywords = items.filter((item)=>(
+            item.title.toLowerCase().includes(searchVal.toLowerCase())
+        ))
+        setSearhItems(searchKeywords)
+    }
     return(
         <div className="wrapper">
             <div className="header">
@@ -41,7 +50,12 @@ const RecipeApp =()=>{
             </div>
             <h2>Recipe App</h2>
             <div className="searchRecipe">
-                <RecipeSearch/>
+                <RecipeSearch searchItm={searchItems}/>
+            </div>
+            <div className="recipeList">
+                <RecipeMain 
+                items={search}
+                />
             </div>
         </div>
     )
