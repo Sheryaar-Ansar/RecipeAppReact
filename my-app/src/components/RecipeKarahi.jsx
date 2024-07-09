@@ -38,6 +38,7 @@ const RecipeKarahi = () => {
                                 <li>Enjoy hot with pita bread or naan! Serves 5-6 people.</li>
                             </ol>
                         </p>
+                        <p><strong>Cooking Time:</strong> 2-3 Hours </p>
                     </div>
                 </div>
             </div>
