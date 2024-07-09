@@ -16,7 +16,7 @@
         <li>RecipeList.jsx</li>
         <li>RecipeMain.jsx</li>
         <li>RecipeSearch.jsx</li>
-        <li>RecipeKarahi.jsx (I've linked '<Link>' in this file)</li>
+        <li>RecipeKarahi.jsx (I've linked 'Link' for Route in this file)</li>
     </ul>
 
 </p>
