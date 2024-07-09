@@ -4,7 +4,7 @@ import RecipeList from './RecipeList'
 
 const RecipeMain = ({items}) =>{
     return(
-        <div>
+        <div className='cardFlex'>
             {items.map((item)=>(
                 <RecipeList 
                 key={item.id}

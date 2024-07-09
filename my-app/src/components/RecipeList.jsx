@@ -1,17 +1,18 @@
 import './Recipe.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RecipeList = ({item}) =>{
-    const { title, image, button } = item
+    const { title, image, button, route } = item
 
     return(
-        <div>
-            <div className="img">
-                <img src={image} alt="" />
-            </div>
-            <div className="title">
+        <div className='card'>
+            <div className="cardInfo">
+                <img src={image} alt=""/>
                 <h2>{title}</h2>
+                <Link to={route}>                
                 <button>{button}</button>
+                </Link>
             </div>
         </div>
     )

@@ -1,14 +1,18 @@
+body{
+    min-height: 100vh;
+}
 .headerDiv{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 198vh;
+    /* width: 198vh; */
     flex-direction: column;
 }
 .recipeSearch input{
@@ -25,4 +29,76 @@
 }
 .title{
     color: black;
+}
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cardInfo{
+    box-shadow: 0 0 18px rgb(42, 54, 54);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+.cardInfo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.cardInfo h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: black;
+}
+.cardInfo button{
+    background: #fff;
+    border: 1px solid cyan;
+    padding: 10px;
+    margin-top: 10px;
+}
+.cardFlex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.recipeSearch input{
+    border: 2px solid cyan;
+}
+.recipeSearch button{
+    background: cyan;
+    padding: 10px;
+    color: #fff;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.mainCol{
+    position: absolute;
+    z-index: 2;
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 50px;
+    min-height: 70vh;
+    box-shadow: 0 0 18px;
+}
+.imageCol img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+.desCol h2{
+    color: aqua;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.desCol p{
+    font-size: 20px;
 }
