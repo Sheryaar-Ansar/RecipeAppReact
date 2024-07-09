@@ -10,7 +10,9 @@ const RecipeMain = ({items}) =>{
                 key={item.id}
                 item={item}
                 />
+
             ))}
+            
         </div>
     )
 }

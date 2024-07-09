@@ -3,8 +3,11 @@ import RecipeSearch from "./RecipeSearch"
 import './Recipe.css'
 import { useState } from "react"
 import ChickenKarachi from './chicken-karahi.jpg'
+import MuttonChops from './mutton-chops.jpg'
+import BBQ from './bbq.jpg'
+import Biryani from './biryani.jpg'
 import RecipeMain from "./RecipeMain"
-import RecipeList from "./RecipeList"
+
 
 
 const RecipeApp =()=>{
@@ -12,31 +15,31 @@ const RecipeApp =()=>{
         [
             {
                 id:1,
-                title:'Chicken',
+                title:'Chicken Karahi',
                 image: ChickenKarachi,
                 button:'Read More',
                 route:'/recipe/1',
             },
             {
                 id:2,
-                title:'Mutton',
-                image:ChickenKarachi,
+                title:'Mutton Chops',
+                image:MuttonChops,
                 button:'Read More',
                 route:'/recipe/2',
 
             },
             {
                 id:3,
-                title:'Beef',
-                image:ChickenKarachi,
+                title:'BBQ',
+                image:BBQ,
                 button:'Read More',
                 route:'/recipe/3',
 
             },
             {
                 id:4,
-                title:'Non-Veg',
-                image:ChickenKarachi,
+                title:'Chicken Handi Biryani',
+                image:Biryani,
                 button:'Read More',
                 route:'/recipe/4',
 
@@ -59,11 +62,12 @@ const RecipeApp =()=>{
             <div className="searchRecipe">
                 <RecipeSearch searchItm={searchItems}/>
             </div>
-            <div className="recipeList" >
+            <div className="recipeList">
                 <RecipeMain 
                 items={search}
                 />
             </div>
+
         </div>
     )
 }

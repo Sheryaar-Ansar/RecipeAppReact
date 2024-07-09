@@ -6,7 +6,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 .wrapper{
     display: flex;
@@ -51,7 +51,7 @@ body{
 .cardInfo h2{
     text-transform: uppercase;
     margin-top: 10px;
-    color: black;
+    color: rgb(63, 245, 245);
 }
 .cardInfo button{
     background: #fff;
@@ -62,6 +62,8 @@ body{
 .cardFlex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 .recipeSearch input{
@@ -77,28 +79,53 @@ body{
     text-transform: uppercase;
     color: aliceblue;
 }
-.mainCol{
-    position: absolute;
+
+
+.bg-opacity{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
     z-index: 2;
-    width: 89%;
+    padding: 20px 0;
+
+}
+.mainCol{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
     padding: 50px;
-    min-height: 70vh;
-    box-shadow: 0 0 18px;
+    /* min-height: 100vh; */
+    box-shadow: 0 0 18px black;
+    border-radius: 20px;
+}
+.imageCol{
+    width: 40%;
+}
+.desCol{
+    width: 40%;
+    margin-left: 150px;
 }
 .imageCol img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
 }
-.desCol h2{
-    color: aqua;
+.desCol h1{
+    color: rgb(75, 75, 75);
     font-size: 40px;
     text-transform: uppercase;
 }
+.desCol h4{
+    color: aqua;
+}
 .desCol p{
     font-size: 20px;
+}
+.desCol ul, ol li{
+    font-size: 12px;
 }
