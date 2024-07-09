@@ -2,7 +2,7 @@
 
 <p>Our Assignment is to make a Recipe App where user can search for food recipe and get data from the search input</p>
 <hr/>
-<br/><br/>
+<br/>
 
 <h3><u>Subject:</u></h3>
 <p>Subject is to make Recipe App using React Dependencies, i.e react-dom-router, useState() e.t.c.</p>
